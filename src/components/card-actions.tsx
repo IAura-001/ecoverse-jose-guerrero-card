@@ -9,7 +9,7 @@ import QRCode from "qrcode";
 import type { ContactConfig } from "@/config/contact";
 import styles from "./card-actions.module.css";
 
-const PRODUCTION_URL = "https://ecoverse-francis-card.vercel.app";
+const PRODUCTION_URL = "https://ecoverse-jose-guerrero-card.vercel.app";
 
 function escapeVCard(value: string) {
   return value.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
