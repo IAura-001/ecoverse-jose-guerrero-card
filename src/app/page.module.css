@@ -28,4 +28,10 @@
   object-fit: contain;
   z-index: 1;
   pointer-events: none;
+}@media (max-width: 480px) {
+  .josePhoto {
+    right: 66px;
+    bottom: -12px;
+    width: 205px;
+  }
 }
