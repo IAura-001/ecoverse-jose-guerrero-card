@@ -10,17 +10,24 @@ export const metadata: Metadata = {
   description: "Ejecutiva de Ventas en ECOVERSE",
   applicationName: "ECOVERSE Card",
   openGraph: {
-    title: "José Guerrero | ECOVERSE",
-    description: "Ejecutivo de Ventas en ECOVERSE",
-    type: "profile",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "José Guerrero — Ejecutivo de Ventas en ECOVERSE" }],
-  },
+  title: "José Guerrero | ECOVERSE",
+  description: "Ejecutivo de Ventas en ECOVERSE",
+  type: "profile",
+  images: [
+    {
+      url: "/og-jose.png",
+      width: 1536,
+      height: 864,
+      alt: "José Guerrero — Ejecutivo de Ventas en ECOVERSE",
+    },
+  ],
+},
   twitter: {
-    card: "summary_large_image",
-    title: "José Guerrero | ECOVERSE",
-    description: "Ejecutivo de Ventas en ECOVERSE",
-    images: ["/og.png"],
-  },
+  card: "summary_large_image",
+  title: "José Guerrero | ECOVERSE",
+  description: "Ejecutivo de Ventas en ECOVERSE",
+  images: ["/og-jose.png"],
+},
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#050607", colorScheme: "dark light" };
 
