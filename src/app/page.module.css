@@ -19,3 +19,13 @@
 .primaryActions{top:clamp(164px,21dvh,196px);bottom:auto}
 .heroVisual{top:12px}
 .discoveryRow{height:20%}.discoveryIcon.location{color:#6431bc;background:#f5efff}
+.josePhoto {
+  position: absolute;
+  right: 64px;
+  bottom: -18px;
+  width: 270px;
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+}

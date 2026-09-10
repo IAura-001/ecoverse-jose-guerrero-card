@@ -84,11 +84,27 @@ export default function Home() {
           <div className={styles.identity}>
             <h1 id="card-name">{contact.fullName}</h1>
             <h2>{contact.jobTitle}</h2>
-            <span className={styles.titleLine} aria-hidden="true" />
+            <span
+              className={styles.titleLine}
+              aria-hidden="true"
+            />
           </div>
 
+          <Image
+            src="/ecoverse/jose-guerrero-clean.png"
+            alt="José Guerrero"
+            width={1024}
+            height={1536}
+            className={styles.josePhoto}
+            priority
+          />
+
           <div className={styles.heroVisual}>
-            <span className={styles.accentShape} aria-hidden="true" />
+            <span
+              className={styles.accentShape}
+              aria-hidden="true"
+            />
+
             <Image
               src="/ecoverse/product.png"
               alt="Sistema de purificación de agua ECOVERSE, vista frontal"
@@ -100,13 +116,24 @@ export default function Home() {
 
           <div className={styles.primaryActions}>
             {primaryActions.map(
-              ({ label, subtitle, href, icon: Icon, external, tone }) => (
+              ({
+                label,
+                subtitle,
+                href,
+                icon: Icon,
+                external,
+                tone,
+              }) => (
                 <a
                   className={styles.primaryRow}
                   href={href}
                   key={label}
                   target={external ? "_blank" : undefined}
-                  rel={external ? "noopener noreferrer" : undefined}
+                  rel={
+                    external
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   aria-label={`${label}: ${subtitle}`}
                 >
                   <span
@@ -134,13 +161,22 @@ export default function Home() {
           aria-labelledby="discover-heading"
         >
           <div className={styles.sectionLabel}>
-            <span id="discover-heading">Conecta con ECOVERSE</span>
+            <span id="discover-heading">
+              Conecta con ECOVERSE
+            </span>
             <span>02</span>
           </div>
 
           <div className={styles.discoveryList}>
             {discoveryLinks.map(
-              ({ label, context, detail, url, icon: Icon, tone }) => (
+              ({
+                label,
+                context,
+                detail,
+                url,
+                icon: Icon,
+                tone,
+              }) => (
                 <a
                   className={styles.discoveryRow}
                   href={url}
@@ -178,7 +214,10 @@ export default function Home() {
             const Icon = featureIcons[index];
 
             return (
-              <div className={styles.valueItem} key={feature.title}>
+              <div
+                className={styles.valueItem}
+                key={feature.title}
+              >
                 <Icon aria-hidden="true" />
                 <strong>{feature.title}</strong>
                 <span>{feature.subtitle}</span>
